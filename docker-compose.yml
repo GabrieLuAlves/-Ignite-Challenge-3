@@ -1,0 +1,10 @@
+services:
+  app_database:
+    image: postgres
+    container_name: ignite-challenge-database-queries
+    environment:
+      - POSTGRES_DB=queries_challenge
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=docker
+    ports:
+      - 5432:5432
